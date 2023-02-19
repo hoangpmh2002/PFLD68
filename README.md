@@ -2,7 +2,7 @@
 detect open/closed eyes
 
 
-step 1: download file resnest50.pth https://drive.google.com/file/d/1_mxZKvHNxUY1gTfFwjWDji3DZREYlWrb/view?usp=sharing
+step 1: download file resnest50.pth https://drive.google.com/file/d/1_mxZKvHNxUY1gTfFwjWDji3DZREYlWrb/view?usp=sharing and put it in this folder
 
 
 step 2: put image in folder 'test'
