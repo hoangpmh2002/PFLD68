@@ -14,11 +14,6 @@ from model2 import MyResNest50
 
 
 def test_images(model_path,images_dir):
-    # model_path = './resnest50.pth'
-    # image_dir: path to the directory you put all the images for testing
-    # images_dir =   'C:/Users/lenovo/PFLD_68_AICS/test_set_2/closed_eyes' # './test_images_2/' 
-    # images_dir =   './test_set_2/closed_eyes' 
-
     Angle=[]
     threshold=10
     image_size = 112  # 112
@@ -33,9 +28,6 @@ def test_images(model_path,images_dir):
         height, width, _ = image.shape
         if image is None:
             print(image_path)
-            continue
-       
-            # cropped = cv2.resize(cropped, (112,112))
         image = cv2.resize(image, (width, height))
         cv2.waitKey(0) 
         x1 = 0
@@ -100,7 +92,6 @@ def test_images(model_path,images_dir):
                 print("open")
             else :
                 print("closed")
-        # cv2.imshow(str(index), image)
         image_name = "result" + image_file
         cv2.imwrite(image_name,image)
         if cv2.waitKey(0) == 13:
